@@ -7,9 +7,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Collection;
-
-
-
 @Service
 public class GameService {
 
@@ -18,7 +15,6 @@ public class GameService {
     public GameService() {
         this.game = new Game("Game1"); // Manual instantiation without @Autowired
     }
-
 
     public Collection<ResourceCard> getResourcesOfB1(){
         Collection<ResourceCard> resourceCards = game.getCards();
